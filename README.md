@@ -1,2 +1,2 @@
 # SlugPlanner
-Major planner for Baskin Enginerring 
+Major planner for Baskin Engineering 
