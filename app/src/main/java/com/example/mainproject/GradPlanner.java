@@ -27,4 +27,16 @@ public class GradPlanner extends AppCompatActivity {
         Intent intent =  new Intent(this, thirdYear.class);
         startActivity(intent);
     }
+
+    public void fourthYear(View view) {
+        Intent intent =  new Intent(this, fourthYear.class);
+        startActivity(intent);
+    }
+
+
+    public void menu(View view) {
+        Intent intent =  new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+    }
 }
