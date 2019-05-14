@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClassProgress"></activity>
+        <activity android:name=".ClassesLeft"></activity>
+        <activity android:name=".ClassProgress" />
         <activity android:name=".fourthYear" />
         <activity android:name=".thirdYear" />
         <activity android:name=".secondYear" />

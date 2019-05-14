@@ -6,4 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".ClassProgress">
 
+    <Button
+        android:id="@+id/todoButton"
+        android:layout_width="199dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:layout_marginBottom="441dp"
+        android:text="Classes to complete"
+        android:onClick="classesLeft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/classesdone"
+        android:layout_width="199dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="293dp"
+        android:text="Classes Finished"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todoButton" />
 </android.support.constraint.ConstraintLayout>
