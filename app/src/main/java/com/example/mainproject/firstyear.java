@@ -11,6 +11,7 @@ public class firstyear extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstyear);
+        setTitle("First year");
     }
 
     public void backToPlanner(View view) {
