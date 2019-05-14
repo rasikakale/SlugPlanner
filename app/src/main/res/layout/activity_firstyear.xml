@@ -108,6 +108,13 @@
             android:hint="Enter a class"
             android:inputType="textPersonName" />
 
+        <Button
+            android:id="@+id/back"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:text="Back to Menu"
+            android:onClick="backToPlanner"/>
+
     </LinearLayout>
 
 </android.widget.LinearLayout>
