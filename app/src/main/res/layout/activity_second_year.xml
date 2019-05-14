@@ -90,6 +90,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CMPE110" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Back to menu"
+            android:onClick="backToPlanner"/>
     </LinearLayout>
 
 </android.widget.LinearLayout>

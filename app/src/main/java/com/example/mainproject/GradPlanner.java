@@ -11,6 +11,7 @@ public class GradPlanner extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grad_planner);
+        setTitle("Graduation Planner");
     }
 
     public void firstYear(View view) {
