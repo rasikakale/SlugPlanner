@@ -13,12 +13,12 @@
         android:layout_marginStart="85dp"
         android:layout_marginLeft="85dp"
         android:layout_marginTop="125dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginRight="85dp"
-        android:layout_marginBottom="62dp"
-        android:text="Profile"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="537dp"
         android:onClick="profile"
-        app:layout_constraintBottom_toTopOf="@+id/PlannerButton"
+        android:text="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,28 +29,34 @@
         android:layout_height="69dp"
         android:layout_marginStart="85dp"
         android:layout_marginLeft="85dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginRight="85dp"
-        android:layout_marginBottom="62dp"
-        android:text="Major Declaration Planner"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="396dp"
         android:onClick="major"
-        app:layout_constraintBottom_toTopOf="@+id/GradButton"
+        android:text="Major Declaration Planner"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileButton" />
 
     <Button
-        android:id="@+id/GPAButton"
+        android:id="@+id/gpatext"
         android:layout_width="242dp"
         android:layout_height="69dp"
         android:layout_marginStart="85dp"
         android:layout_marginLeft="85dp"
+        android:layout_marginTop="63dp"
         android:layout_marginEnd="85dp"
         android:layout_marginRight="85dp"
-        android:layout_marginBottom="118dp"
+        android:layout_marginBottom="132dp"
         android:text="GPA Calculator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GradButton" />
 
     <Button
         android:id="@+id/GradButton"
@@ -58,12 +64,15 @@
         android:layout_height="69dp"
         android:layout_marginStart="85dp"
         android:layout_marginLeft="85dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginRight="85dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="264dp"
         android:text="Graduation Planner"
-        app:layout_constraintBottom_toTopOf="@+id/GPAButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlannerButton" />
 
 </android.support.constraint.ConstraintLayout>

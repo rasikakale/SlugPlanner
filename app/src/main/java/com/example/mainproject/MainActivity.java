@@ -17,11 +17,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent =  new Intent(this, Profile.class);
         startActivity(intent);
 
-
     }
+
     public void major (View view) {
-        Intent intent =  new Intent(this, Major.class);
+        Intent intent =  new Intent(this, GradPlanner.class);
         startActivity(intent);
 
     }
+
 }
