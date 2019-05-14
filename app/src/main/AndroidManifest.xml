@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClassesLeft"></activity>
+        <activity android:name=".ClassesDone"></activity>
+        <activity android:name=".GPA2" />
+        <activity android:name=".ClassesLeft" />
         <activity android:name=".ClassProgress" />
         <activity android:name=".fourthYear" />
         <activity android:name=".thirdYear" />

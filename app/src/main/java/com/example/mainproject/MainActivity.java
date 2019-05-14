@@ -30,4 +30,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent =  new Intent(this, ClassProgress.class);
         startActivity(intent);
     }
+
+    public void GPA(View view) {
+        Intent intent = new Intent(this, GPA2.class);
+        startActivity(intent);
+
+    }
 }
