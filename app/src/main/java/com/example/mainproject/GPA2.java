@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class GPA2 extends AppCompatActivity {
@@ -14,7 +15,7 @@ public class GPA2 extends AppCompatActivity {
     EditText gpa;
     EditText units;
     EditText oneClass;
-    Context ctx;
+    TextView result, quarterResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +24,13 @@ public class GPA2 extends AppCompatActivity {
         gpa = findViewById(R.id.GPAValue);
         units = findViewById(R.id.units);
         oneClass = findViewById(R.id.singleClass);
+        result = findViewById(R.id.gpaResult);
+        quarterResult = findViewById(R.id.quarterpts);
+        setTitle("GPA Calculator");
     }
 
     public void calculate(View view){
-        int gpaVal  = Integer.parseInt(gpa.getText().toString());
+        double gpaVal  = Double.parseDouble(gpa.getText().toString());
         int unitVal  = Integer.parseInt(units.getText().toString());
         String singleClass = oneClass.getText().toString();
         double classVal;
@@ -63,6 +67,12 @@ public class GPA2 extends AppCompatActivity {
 
         double gpaQuarterPoints = gpaVal * unitVal;
         double gpaClassPoints = classVal * unitVal;
+
+        String res = String.valueOf(gpaQuarterPoints);
+        String q = String.valueOf(gpaClassPoints);
+
+        result.setText("Quarter points: " +res);
+        quarterResult.setText("Class points: " +q);
 
         //Toast.makeText(ctx, "GPA Points: " + (gpaQuarterPoints), Toast.LENGTH_LONG).show();
 
