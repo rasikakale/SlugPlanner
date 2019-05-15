@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".Profile"
+    android:background="@color/babyblue">
 
     <TextView
         android:id="@+id/textView"
@@ -77,32 +78,11 @@
         app:layout_constraintTop_toBottomOf="@+id/GradDaysText" />
 
     <EditText
-        android:id="@+id/gpatext"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Enter GPA"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/majortext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
         android:id="@+id/majortext"
         android:layout_width="246dp"
         android:layout_height="48dp"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="93dp"
         android:layout_marginEnd="39dp"
         android:layout_marginRight="39dp"
         android:layout_marginBottom="88dp"
@@ -112,8 +92,7 @@
         app:layout_constraintBottom_toTopOf="@+id/GradDaysText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/MajorText"
-        app:layout_constraintTop_toBottomOf="@+id/gpatext" />
+        app:layout_constraintStart_toEndOf="@+id/MajorText" />
 
     <EditText
         android:id="@+id/Gradtext"
@@ -150,4 +129,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ExpectedGradDate" />
+
+    <TextView
+        android:id="@+id/GPA"
+        android:layout_width="157dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="101dp"
+        android:text="3.4"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/majortext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
