@@ -4,96 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GPA">
+    tools:context=".GPA2">
 
-    <EditText
-        android:id="@+id/GPAValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="97dp"
-        android:layout_marginLeft="97dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginRight="101dp"
-        android:layout_marginBottom="62dp"
-        android:ems="10"
-        android:hint="Enter a GPA for a Quarter."
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/units"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <!--<EditText-->
+        <!--android:id="@+id/GPAValue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="99dp"-->
+        <!--android:layout_marginLeft="99dp"-->
+        <!--android:layout_marginTop="18dp"-->
+        <!--android:layout_marginEnd="99dp"-->
+        <!--android:layout_marginRight="99dp"-->
+        <!--android:layout_marginBottom="63dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter a GPA for a Quarter."-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/button" />-->
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginLeft="161dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginRight="148dp"
-        android:layout_marginBottom="232dp"
-        android:text="Calculate"
+        android:layout_marginStart="154dp"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        android:layout_marginBottom="127dp"
         android:onClick="calculate"
+        android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/units" />
+        app:layout_constraintTop_toBottomOf="@+id/units3" />
 
     <EditText
-        android:id="@+id/units"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="98dp"
-        android:layout_marginLeft="98dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginBottom="44dp"
+        android:id="@+id/units1"
+        android:layout_width="291dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="45dp"
         android:ems="10"
-        android:hint="Enter Units taken"
+        android:hint="Enter Units Taken"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/singleClass2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GPAValue" />
+        app:layout_constraintTop_toBottomOf="@+id/singleClass1" />
 
     <EditText
-        android:id="@+id/singleClass"
-        android:layout_width="313dp"
-        android:layout_height="48dp"
+        android:id="@+id/singleClass1"
+        android:layout_width="335dp"
+        android:layout_height="98dp"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="14dp"
         android:ems="10"
-        android:hint="Enter Letter Grade for Single Class"
+        android:hint="Enter Letter Grade for First Class"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/units1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="82dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="181dp"
-        android:layout_marginLeft="181dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginRight="148dp"
-        android:layout_marginBottom="37dp"
-        android:text="OR"
-        app:layout_constraintBottom_toTopOf="@+id/GPAValue"
+    <EditText
+        android:id="@+id/singleClass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Enter Letter Grade for Second Class"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/units2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/units1" />
+
+    <EditText
+        android:id="@+id/units2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Enter Units for Second Class"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/singleClass3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleClass2" />
+
+    <EditText
+        android:id="@+id/singleClass3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:ems="10"
+        android:hint="Enter Letter Grade for Third Class"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/units3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/singleClass" />
+        app:layout_constraintTop_toBottomOf="@+id/units2" />
+
+    <EditText
+        android:id="@+id/units3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Enter Units for Third Class"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleClass3" />
+
 </android.support.constraint.ConstraintLayout>
