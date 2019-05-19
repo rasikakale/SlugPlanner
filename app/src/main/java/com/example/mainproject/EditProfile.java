@@ -22,7 +22,7 @@ public class EditProfile extends AppCompatActivity {
         prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
         String major = prefs.getString("my_major", "Enter major");
-        String gradDate = prefs.getString("my_date", "Enter date");
+        int gradDate = prefs.getInt("my_date", 2019);
 
         majorInput = findViewById(R.id.editmajor);
         gradDateInput = findViewById(R.id.editDate);
@@ -34,12 +34,12 @@ public class EditProfile extends AppCompatActivity {
     public void save(View view) {
 
         String major = majorInput.getText().toString();
-        String gradDate = gradDateInput.getText().toString();
+        int gradDate = Integer.parseInt(gradDateInput.getText().toString());
 
         //save Data
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("my_major", major);
-        editor.putString("my_date", gradDate);
+        editor.putInt("my_date", gradDate);
         editor.apply();
 
 

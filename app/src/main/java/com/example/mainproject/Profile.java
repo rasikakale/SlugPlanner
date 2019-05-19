@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 
 public class Profile extends AppCompatActivity {
 
-
+    static int GradDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,10 @@ public class Profile extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
         String major = prefs.getString("my_major", "Enter major");
-        String gradDate = prefs.getString("my_date", "Enter date");
+        int GradDate = prefs.getInt("my_date", 0);
 
         ((TextView)findViewById(R.id.Majortext1)).setText(major);
-        ((TextView)findViewById(R.id.gradDate)).setText(gradDate);
+        ((TextView)findViewById(R.id.gradDate)).setText(GradDate);
 
 
     }

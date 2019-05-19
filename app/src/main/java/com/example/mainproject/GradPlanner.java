@@ -3,15 +3,29 @@ package com.example.mainproject;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
+import org.w3c.dom.Text;
+
 public class GradPlanner extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grad_planner);
         setTitle("Graduation Planner");
+
+
+        int grad = Profile.GradDate;
+
+//        if(grad != 0) {
+//            Log.d("log", String.valueOf(grad));
+//        }
+
+
     }
 
     public void firstYear(View view) {
@@ -35,6 +49,7 @@ public class GradPlanner extends AppCompatActivity {
     }
 
 
+    // back button to main menu
     public void menu(View view) {
         Intent intent =  new Intent(this, MainActivity.class);
         startActivity(intent);
