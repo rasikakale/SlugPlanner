@@ -7,11 +7,15 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    static MyDB db;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Slug Planner");
+        db = new MyDB(this, "NAME_DATABASE", null, 1);
     }
 
     public void profile (View view) {

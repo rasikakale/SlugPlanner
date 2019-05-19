@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 import org.w3c.dom.Text;
+
 
 public class Profile extends AppCompatActivity {
 
@@ -20,6 +22,7 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         setTitle("Profile");
 
+
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
         String major = prefs.getString("my_major", "Enter major");
@@ -30,6 +33,8 @@ public class Profile extends AppCompatActivity {
 
 
     }
+
+
 
     public void backToMenu(View view) {
         Intent intent =  new Intent(this, MainActivity.class);
