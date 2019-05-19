@@ -19,7 +19,7 @@ public class Profile extends AppCompatActivity {
         GPA = findViewById(R.id.gpatext);
     }
 
-    
+
 
 
     public void backToMenu(View view) {
