@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 
 public class EditProfile extends AppCompatActivity {
@@ -12,6 +14,12 @@ public class EditProfile extends AppCompatActivity {
     EditText majorInput;
     EditText gradDateInput;
     SharedPreferences prefs;
+
+    private static final String[] majors = new String[]{
+            "Bioengineering B.S", "Bioinformatics B.S.", "Computer Engineering B.S.", "Computer Science B.A.",
+            "Computer Science B.S.", "Computer Game Design B.S.", "Electrical Engineering B.S.", "Network and Digital Technology B.A.",
+            "Robotics Engineering B.S.","Technology and Information Management B.S."
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +37,10 @@ public class EditProfile extends AppCompatActivity {
 
         majorInput.setText(major);
         gradDateInput.setText(Integer.toString(gradDate));
+
+        AutoCompleteTextView autoCompleteTextView = findViewById(R.id.editmajor);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, majors);
+        autoCompleteTextView.setAdapter(adapter);
     }
 
     public void save(View view) {
