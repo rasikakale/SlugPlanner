@@ -21,14 +21,14 @@ public class EditProfile extends AppCompatActivity {
 
         prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
-        String major = prefs.getString("my_major", "Enter major");
+        String major = prefs.getString("my_major", "");
         int gradDate = prefs.getInt("my_date", 2019);
 
         majorInput = findViewById(R.id.editmajor);
         gradDateInput = findViewById(R.id.editDate);
 
         majorInput.setText(major);
-        gradDateInput.setText(gradDate);
+        gradDateInput.setText(Integer.toString(gradDate));
     }
 
     public void save(View view) {

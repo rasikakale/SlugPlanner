@@ -26,10 +26,10 @@ public class Profile extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
         String major = prefs.getString("my_major", "Enter major");
-        int GradDate = prefs.getInt("my_date", 0);
+        GradDate = prefs.getInt("my_date", 2019);
 
         ((TextView)findViewById(R.id.Majortext1)).setText(major);
-        ((TextView)findViewById(R.id.gradDate)).setText(GradDate);
+        ((TextView)findViewById(R.id.gradDate)).setText((Integer.toString(GradDate)));
 
 
     }

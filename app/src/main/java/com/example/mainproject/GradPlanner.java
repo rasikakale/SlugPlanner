@@ -5,12 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
 public class GradPlanner extends AppCompatActivity {
 
-
+    Button year1;
+    Button year2;
+    Button year3;
+    Button year4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +23,23 @@ public class GradPlanner extends AppCompatActivity {
         setContentView(R.layout.activity_grad_planner);
         setTitle("Graduation Planner");
 
-
         int grad = Profile.GradDate;
 
-//        if(grad != 0) {
-//            Log.d("log", String.valueOf(grad));
-//        }
+        year1 =  findViewById(R.id.firstyear);
+        year2 =  findViewById(R.id.secondyear);
+        year3 =  findViewById(R.id.thirdyear);
+        year4 =  findViewById(R.id.fourthYear);
+
+
+        year1.setText(Integer.toString(grad - 3));
+        year2.setText(Integer.toString(grad - 2));
+        year3.setText(Integer.toString(grad - 1));
+        year4.setText(Integer.toString(grad));
+
+
+        if(grad != 0) {
+            Log.d("log", String.valueOf(grad));
+        }
 
 
     }
