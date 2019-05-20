@@ -25,4 +25,9 @@ public class ClassProgress extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void classesDone(View view) {
+        Intent intent =  new Intent(this, ClassesDone.class);
+        startActivity(intent);
+    }
 }

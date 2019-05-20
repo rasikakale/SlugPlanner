@@ -36,6 +36,7 @@
         android:layout_marginRight="105dp"
         android:layout_marginBottom="456dp"
         android:text="Classes Finished"
+        android:onClick="classesDone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
