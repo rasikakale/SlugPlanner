@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 
 public class Profile extends AppCompatActivity {
 
-    static int GradDate;
+    static int GradDate = 2019;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

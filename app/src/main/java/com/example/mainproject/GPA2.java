@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class GPA2 extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class GPA2 extends AppCompatActivity {
     EditText unitVal3;
     EditText oneClass3;
     Context ctx;
+    TextView gpaTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class GPA2 extends AppCompatActivity {
 
         unitVal3 = findViewById(R.id.units3);
         oneClass3 = findViewById(R.id.singleClass3);
+
+        gpaTextView = findViewById(R.id.gpaTextView);
     }
 
     public void calculate(View view){
@@ -171,7 +175,7 @@ public class GPA2 extends AppCompatActivity {
 
         double totalGPA = ((gpaClassPoints1+gpaClassPoints2+gpaClassPoints3)/unitTotal);
 
-
+        gpaTextView.setText("Quarter GPA: "+ String.valueOf(totalGPA));
 
 
 

@@ -70,6 +70,7 @@ public class ClassesDone extends AppCompatActivity {
 
 
             } catch (IOException e) {
+                Log.d("log", "in catch-charity");
                 e.printStackTrace();
             }
 
@@ -79,6 +80,7 @@ public class ClassesDone extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
+            Log.d("log", "about to print the classes");
             courseText.setText(stringBuilder);
         }
     }
