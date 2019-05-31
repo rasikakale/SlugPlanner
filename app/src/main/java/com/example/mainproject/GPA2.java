@@ -1,6 +1,7 @@
 package com.example.mainproject;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,12 +25,17 @@ public class GPA2 extends AppCompatActivity {
     EditText oneClass3;
     Context ctx;
     TextView gpaTextView;
+    public static double totalGPA;
+    TextView gpaProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpa2);
         //gpa1 = findViewById(R.id.GPAValue);
+
+        SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
+
 
         unitVal1 = findViewById(R.id.units1);
         oneClass1 = findViewById(R.id.singleClass1);
@@ -41,6 +47,7 @@ public class GPA2 extends AppCompatActivity {
         oneClass3 = findViewById(R.id.singleClass3);
 
         gpaTextView = findViewById(R.id.gpaTextView);
+        //gpaProfile = findViewById();
     }
 
     public void calculate(View view){
@@ -173,7 +180,7 @@ public class GPA2 extends AppCompatActivity {
        double gpaClassPoints2 = classVal2 * unitValue2;
        double gpaClassPoints3 = classVal3 * unitValue3;
 
-        double totalGPA = ((gpaClassPoints1+gpaClassPoints2+gpaClassPoints3)/unitTotal);
+        totalGPA = ((gpaClassPoints1+gpaClassPoints2+gpaClassPoints3)/unitTotal);
 
         gpaTextView.setText("Quarter GPA: "+ String.valueOf(totalGPA));
 
@@ -183,7 +190,7 @@ public class GPA2 extends AppCompatActivity {
 
         //Toast.makeText(ctx, "GPA Points: " + (gpaQuarterPoints), Toast.LENGTH_LONG).show();
 
-
+        System.out.printf("Value with 3 digits after decimal point %.3f %n", totalGPA);
         Log.d("GPAPoints", String.valueOf(totalGPA));
        // Log.d("Gpa", String.valueOf(gpaClassPoints));
 

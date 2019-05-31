@@ -47,7 +47,7 @@ public class EditProfile extends AppCompatActivity {
 
         String major = majorInput.getText().toString();
         int gradDate = Integer.parseInt(gradDateInput.getText().toString());
-
+        //int units = Integer.parseInt(unitsGiven.getText().toString());
         //save Data
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("my_major", major);
