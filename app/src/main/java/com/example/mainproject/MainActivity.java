@@ -40,4 +40,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void Date(View view) {
+        Intent intent = new Intent(this, DatePrac.class);
+        startActivity(intent);
+
+    }
+
 }

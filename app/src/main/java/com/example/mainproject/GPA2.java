@@ -26,7 +26,13 @@ public class GPA2 extends AppCompatActivity {
     Context ctx;
     TextView gpaTextView;
     public static double totalGPA;
+    public static double unitTotal;
+
     TextView gpaProfile;
+
+    Double overallGPA;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +54,12 @@ public class GPA2 extends AppCompatActivity {
 
         gpaTextView = findViewById(R.id.gpaTextView);
         //gpaProfile = findViewById();
+
+
+        gpaProfile = findViewById(R.id.GPA);
+
     }
+
 
     public void calculate(View view){
        // int gpaVal1  = Integer.parseInt(gpa1.getText().toString());
@@ -174,7 +185,7 @@ public class GPA2 extends AppCompatActivity {
        // double gpaQuarterPoints2 = gpaVal2 * unitVal2;
         // double gpaQuarterPoints3 = gpaVal3 * unitVal3;
 
-        double unitTotal = unitValue1 + unitValue2 + unitValue3;
+        unitTotal = unitValue1 + unitValue2 + unitValue3;
 
        double gpaClassPoints1 = classVal1 * unitValue1;
        double gpaClassPoints2 = classVal2 * unitValue2;
@@ -184,6 +195,13 @@ public class GPA2 extends AppCompatActivity {
 
         gpaTextView.setText("Quarter GPA: "+ String.valueOf(totalGPA));
 
+
+        //overallGPA = Double.parseDouble(gpaTextView.getText().toString());
+//
+//        overallGPA = overallGPA + totalGPA;
+//
+//
+//        gpaProfile.setText(String.valueOf(overallGPA));
 
 
 

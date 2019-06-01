@@ -40,9 +40,16 @@ public class Profile extends AppCompatActivity {
 
         ((TextView)findViewById(R.id.Majortext1)).setText(major);
         ((TextView)findViewById(R.id.gradDate)).setText((Integer.toString(GradDate)));
+
+
+
+
+
         GPA = findViewById(R.id.GPA);
+        unitsText = findViewById(R.id.unitsText);
 
         GPA.setText(Double.toString(GPA2.totalGPA));
+        unitsText.setText(Double.toString(GPA2.unitTotal));
         //Double.toString(double)
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
