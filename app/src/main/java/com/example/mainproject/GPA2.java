@@ -1,6 +1,7 @@
 package com.example.mainproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,7 +31,7 @@ public class GPA2 extends AppCompatActivity {
 
     TextView gpaProfile;
 
-    Double overallGPA;
+    public static double overallGPA;
 
 
 
@@ -56,7 +57,7 @@ public class GPA2 extends AppCompatActivity {
         //gpaProfile = findViewById();
 
 
-        gpaProfile = findViewById(R.id.GPA);
+
 
     }
 
@@ -196,21 +197,30 @@ public class GPA2 extends AppCompatActivity {
         gpaTextView.setText("Quarter GPA: "+ String.valueOf(totalGPA));
 
 
-        //overallGPA = Double.parseDouble(gpaTextView.getText().toString());
+
+        overallGPA = .00000000001;
+
+        overallGPA = Double.parseDouble(Profile.GPA.getText().toString());
 //
-//        overallGPA = overallGPA + totalGPA;
+        overallGPA = overallGPA + totalGPA;
 //
 //
-//        gpaProfile.setText(String.valueOf(overallGPA));
+//        Profile.GPA.setText(String.valueOf(overallGPA));
 
 
 
 
         //Toast.makeText(ctx, "GPA Points: " + (gpaQuarterPoints), Toast.LENGTH_LONG).show();
 
+        Log.d("GPAPoint", String.valueOf(overallGPA));
+
         System.out.printf("Value with 3 digits after decimal point %.3f %n", totalGPA);
         Log.d("GPAPoints", String.valueOf(totalGPA));
        // Log.d("Gpa", String.valueOf(gpaClassPoints));
+
+
+        Intent intent =  new Intent(this, Profile.class);
+        startActivity(intent);
 
 
 

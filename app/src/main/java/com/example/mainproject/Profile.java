@@ -23,7 +23,7 @@ import java.util.Locale;
 public class Profile extends AppCompatActivity {
 
     static int GradDate = 2019;
-    TextView GPA,unitsText;
+    public static TextView GPA,unitsText;
 
 
     @Override
@@ -48,9 +48,11 @@ public class Profile extends AppCompatActivity {
         GPA = findViewById(R.id.GPA);
         unitsText = findViewById(R.id.unitsText);
 
-        GPA.setText(Double.toString(GPA2.totalGPA));
+        GPA.setText(Double.toString(GPA2.overallGPA));
         unitsText.setText(Double.toString(GPA2.unitTotal));
         //Double.toString(double)
+
+
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
         Date date = new Date();
@@ -70,6 +72,13 @@ public class Profile extends AppCompatActivity {
 
     public void edit(View view) {
         Intent intent =  new Intent(this, EditProfile.class);
+        startActivity(intent);
+
+    }
+
+
+    public void GPA(View view) {
+        Intent intent = new Intent(this, GPA2.class);
         startActivity(intent);
 
     }
