@@ -31,6 +31,7 @@ public class ClassesDone extends AppCompatActivity {
 
         //courseText = (TextView) findViewById(R.id.courseName);
         listView = (ListView) findViewById(R.id.listViewID);
+        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         setTitle("Course List");
         //Button button = (Button) findViewById(R.id.courseButton);
 
