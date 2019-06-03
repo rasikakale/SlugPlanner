@@ -20,29 +20,23 @@
             android:text="Fall"
             android:textSize="40sp" />
 
-        <EditText
-            android:id="@+id/editText"
+        <AutoCompleteTextView
+            android:id="@+id/fall1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
-        <EditText
-            android:id="@+id/editText2"
+        <AutoCompleteTextView
+            android:id="@+id/fall2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
-        <EditText
-            android:id="@+id/editText3"
+        <AutoCompleteTextView
+            android:id="@+id/fall3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
         <TextView
             android:id="@+id/textView9"
@@ -52,29 +46,23 @@
             android:text="Winter"
             android:textSize="40sp" />
 
-        <EditText
-            android:id="@+id/editText4"
+        <AutoCompleteTextView
+            android:id="@+id/winter1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
-        <EditText
-            android:id="@+id/editText5"
+        <AutoCompleteTextView
+            android:id="@+id/winter2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
-        <EditText
-            android:id="@+id/editText6"
+        <AutoCompleteTextView
+            android:id="@+id/winter3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
         <TextView
             android:id="@+id/textView11"
@@ -84,29 +72,23 @@
             android:text="Spring"
             android:textSize="40sp" />
 
-        <EditText
-            android:id="@+id/editText8"
+        <AutoCompleteTextView
+            android:id="@+id/spring1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
-        <EditText
-            android:id="@+id/editText9"
+        <AutoCompleteTextView
+            android:id="@+id/spring2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
-        <EditText
-            android:id="@+id/editText10"
+        <AutoCompleteTextView
+            android:id="@+id/spring3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter a class"
-            android:inputType="textPersonName" />
+            android:hint="Enter a class" />
 
         <Button
             android:id="@+id/back"
