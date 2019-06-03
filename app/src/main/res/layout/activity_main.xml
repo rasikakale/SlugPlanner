@@ -1,98 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/calendar">
+    android:background="@drawable/bgapps">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/profileButton"
-        android:layout_width="242dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="125dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:layout_marginBottom="537dp"
-        android:onClick="profile"
-        android:text="Profile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/PlannerButton"
-        android:layout_width="242dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:layout_marginBottom="396dp"
-        android:onClick="major"
-        android:text="Graduation Planner"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileButton" />
+            <TextView
+                android:id="@+id/textDashboard"
+                android:text="My SlugPlanner"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/textItems"
+                android:text="4 items"
+                android:textSize="14sp"
+                android:textColor="#52BAFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/gpatext"
-        android:layout_width="242dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginRight="85dp"
-        android:layout_marginBottom="132dp"
-        android:text="GPA Calculator"
-        android:onClick="GPA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GradButton" />
+        <GridLayout
+            android:layout_marginTop="75dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/GradButton"
-        android:layout_width="242dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:layout_marginBottom="264dp"
-        android:text="Class Progress"
-        android:onClick="Classes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PlannerButton" />
+            <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
 
-    <Button
-        android:id="@+id/dateText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginRight="163dp"
-        android:layout_marginBottom="38dp"
-        android:text="Button"
-        android:onClick="Date"
-        app:layout_constraintBottom_toTopOf="@+id/profileButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:onClick="profile"-->
+
+                <!--/>-->
+
+                <ImageView
+                    android:src="@drawable/contact"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#6f6f6f"
+                    android:textSize="18sp"
+                    android:text="Profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="profile"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="major"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:src="@drawable/bookmark"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Planner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <!--next row-->
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="Classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--<Button-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:onClick="profile"-->
+
+                    <!--/>-->
+
+                    <ImageView
+                        android:src="@drawable/date"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="Progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="GPA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:src="@drawable/bug"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:text="GPA CALC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/profileButton"-->
+        <!--android:layout_width="242dp"-->
+        <!--android:layout_height="69dp"-->
+        <!--android:layout_marginStart="85dp"-->
+        <!--android:layout_marginLeft="85dp"-->
+        <!--android:layout_marginTop="125dp"-->
+        <!--android:layout_marginEnd="84dp"-->
+        <!--android:layout_marginRight="84dp"-->
+        <!--android:layout_marginBottom="537dp"-->
+        <!--android:onClick="profile"-->
+        <!--android:text="Profile"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/PlannerButton"-->
+        <!--android:layout_width="242dp"-->
+        <!--android:layout_height="69dp"-->
+        <!--android:layout_marginStart="85dp"-->
+        <!--android:layout_marginLeft="85dp"-->
+        <!--android:layout_marginTop="72dp"-->
+        <!--android:layout_marginEnd="84dp"-->
+        <!--android:layout_marginRight="84dp"-->
+        <!--android:layout_marginBottom="396dp"-->
+        <!--android:onClick="major"-->
+        <!--android:text="Graduation Planner"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/profileButton" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/gpatext"-->
+        <!--android:layout_width="242dp"-->
+        <!--android:layout_height="69dp"-->
+        <!--android:layout_marginStart="85dp"-->
+        <!--android:layout_marginLeft="85dp"-->
+        <!--android:layout_marginTop="63dp"-->
+        <!--android:layout_marginEnd="85dp"-->
+        <!--android:layout_marginRight="85dp"-->
+        <!--android:layout_marginBottom="132dp"-->
+        <!--android:text="GPA Calculator"-->
+        <!--android:onClick="GPA"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/GradButton" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/GradButton"-->
+        <!--android:layout_width="242dp"-->
+        <!--android:layout_height="69dp"-->
+        <!--android:layout_marginStart="85dp"-->
+        <!--android:layout_marginLeft="85dp"-->
+        <!--android:layout_marginTop="63dp"-->
+        <!--android:layout_marginEnd="84dp"-->
+        <!--android:layout_marginRight="84dp"-->
+        <!--android:layout_marginBottom="264dp"-->
+        <!--android:text="Class Progress"-->
+        <!--android:onClick="Classes"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/PlannerButton" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/dateText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="160dp"-->
+        <!--android:layout_marginLeft="160dp"-->
+        <!--android:layout_marginTop="39dp"-->
+        <!--android:layout_marginEnd="163dp"-->
+        <!--android:layout_marginRight="163dp"-->
+        <!--android:layout_marginBottom="38dp"-->
+        <!--android:text="Button"-->
+        <!--android:onClick="Date"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/profileButton"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+</ScrollView>
