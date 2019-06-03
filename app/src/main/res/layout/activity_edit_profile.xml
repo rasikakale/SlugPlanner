@@ -24,14 +24,16 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/ic_person_black_24dp"/>
+
             <EditText
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center_horizontal"
+                android:id="@+id/EditName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Charity Funtila"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
                 android:hint="Enter name"
-                android:textColor="#fff"/>
+                android:text="Charity Funtila"
+                android:textColor="#fff" />
         </LinearLayout>
 
     </RelativeLayout>

@@ -37,9 +37,11 @@ public class Profile extends AppCompatActivity {
 
         String major = prefs.getString("my_major", "Enter major");
         GradDate = prefs.getInt("my_date", 2019);
+        String name = prefs.getString("my_name", "Enter Name");
 
         ((TextView)findViewById(R.id.Majortext1)).setText(major);
         ((TextView)findViewById(R.id.gradDate)).setText((Integer.toString(GradDate)));
+        ((TextView)findViewById(R.id.ViewName)).setText(name);
 
 
 

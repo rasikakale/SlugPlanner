@@ -17,6 +17,8 @@ public class GradPlanner extends AppCompatActivity {
     Button year3;
     Button year4;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,10 +33,10 @@ public class GradPlanner extends AppCompatActivity {
         year4 =  findViewById(R.id.fourthYear);
 
 
-        year1.setText(Integer.toString(grad - 3));
-        year2.setText(Integer.toString(grad - 2));
-        year3.setText(Integer.toString(grad - 1));
-        year4.setText(Integer.toString(grad));
+        year1.setText((Integer.toString(grad - 4)) + "-" + (Integer.toString(grad - 3)));
+        year2.setText((Integer.toString(grad - 3)) + "-" + (Integer.toString(grad - 2)));
+        year3.setText((Integer.toString(grad - 2)) + "-" + (Integer.toString(grad - 1)));
+        year4.setText((Integer.toString(grad - 1)) + "-" + (Integer.toString(grad)));
 
 
         if(grad != 0) {
