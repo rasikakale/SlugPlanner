@@ -8,93 +8,95 @@
     tools:context=".thirdYear">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E91E63"
+            android:background="@color/colorAccent"
             android:text="Fall"
             android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/textView6"
+        <AutoCompleteTextView
+            android:id="@+id/fall1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView7"
+        <AutoCompleteTextView
+            android:id="@+id/fall2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView8"
+        <AutoCompleteTextView
+            android:id="@+id/fall3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#3F51B5"
             android:text="Winter"
             android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/textView12"
+        <AutoCompleteTextView
+            android:id="@+id/winter1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView24"
+        <AutoCompleteTextView
+            android:id="@+id/winter2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView25"
+        <AutoCompleteTextView
+            android:id="@+id/winter3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#8BC34A"
             android:text="Spring"
             android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/textView27"
+        <AutoCompleteTextView
+            android:id="@+id/spring1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView28"
+        <AutoCompleteTextView
+            android:id="@+id/spring2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView29"
+        <AutoCompleteTextView
+            android:id="@+id/spring3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:hint="Enter a class" />
 
         <Button
-            android:id="@+id/backButton"
-            android:layout_width="135dp"
+            android:id="@+id/back"
+            android:layout_width="141dp"
             android:layout_height="wrap_content"
-            android:text="back to menu"
+            android:text="Back to Menu"
             android:onClick="backToPlanner"/>
+
     </LinearLayout>
 </android.widget.LinearLayout>

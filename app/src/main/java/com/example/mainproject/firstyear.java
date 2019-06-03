@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
@@ -43,12 +44,20 @@ public class firstyear extends AppCompatActivity {
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.fall1);
         AutoCompleteTextView autoCompleteTextView2 = findViewById(R.id.fall2);
         AutoCompleteTextView autoCompleteTextView3 = findViewById(R.id.fall3);
+        autoCompleteTextView.setThreshold(1);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList_courses);
         autoCompleteTextView.setAdapter(adapter);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList_courses);
         autoCompleteTextView2.setAdapter(adapter2);
         ArrayAdapter<String> adapter3 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList_courses);
         autoCompleteTextView3.setAdapter(adapter3);
+
+        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               // fall1.setText("" + parent.getSelectedItem());
+            }
+        });
 //        winter set the search bars
         AutoCompleteTextView autoCompleteTextViewWT1 = findViewById(R.id.winter1);
         AutoCompleteTextView autoCompleteTextViewWT2 = findViewById(R.id.winter2);
@@ -63,6 +72,7 @@ public class firstyear extends AppCompatActivity {
         AutoCompleteTextView autoCompleteTextViewSP1 = findViewById(R.id.spring1);
         AutoCompleteTextView autoCompleteTextViewSP2 = findViewById(R.id.spring2);
         AutoCompleteTextView autoCompleteTextViewSP3 = findViewById(R.id.spring3);
+
         ArrayAdapter<String> adapterSP1 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList_courses);
         autoCompleteTextViewSP1.setAdapter(adapterSP1);
         ArrayAdapter<String> adapterSP2 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList_courses);

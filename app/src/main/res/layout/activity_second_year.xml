@@ -9,6 +9,7 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -21,82 +22,83 @@
             android:text="Fall"
             android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/textView13"
+        <AutoCompleteTextView
+            android:id="@+id/fall1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CMPS102" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView14"
+        <AutoCompleteTextView
+            android:id="@+id/fall2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CMPE12" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView15"
+        <AutoCompleteTextView
+            android:id="@+id/fall3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CMPE107" />
+            android:hint="Enter a class" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#3F51B5"
             android:text="Winter"
             android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/textView17"
+        <AutoCompleteTextView
+            android:id="@+id/winter1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CMPS121" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView18"
+        <AutoCompleteTextView
+            android:id="@+id/winter2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CMPS112" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView19"
+        <AutoCompleteTextView
+            android:id="@+id/winter3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PHILL11" />
+            android:hint="Enter a class" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#8BC34A"
             android:text="Spring"
             android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/textView21"
+        <AutoCompleteTextView
+            android:id="@+id/spring1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ECON10A" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView22"
+        <AutoCompleteTextView
+            android:id="@+id/spring2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CMPS183" />
+            android:hint="Enter a class" />
 
-        <TextView
-            android:id="@+id/textView23"
+        <AutoCompleteTextView
+            android:id="@+id/spring3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CMPE110" />
+            android:hint="Enter a class" />
 
         <Button
             android:id="@+id/back"
-            android:layout_width="139dp"
+            android:layout_width="141dp"
             android:layout_height="wrap_content"
-            android:text="Back to menu"
+            android:text="Back to Menu"
             android:onClick="backToPlanner"/>
+
     </LinearLayout>
 
 </android.widget.LinearLayout>
