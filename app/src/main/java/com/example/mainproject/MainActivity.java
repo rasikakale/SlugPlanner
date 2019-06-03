@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void GPA(View view) {
-        Intent intent = new Intent(this, GPA2.class);
+        Intent intent = new Intent(this, GPA.class);
         startActivity(intent);
 
     }
