@@ -63,7 +63,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/freshmamy"
+                        android:src="@drawable/number"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -94,12 +94,12 @@
                     android:padding="16dp"
                     android:gravity="center"
                     android:clickable="true"
-                    android:onClick="firstYear"
+                    android:onClick="secondYear"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/contact"
+                        android:src="@drawable/numbertwo"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
                     <Button
@@ -130,12 +130,12 @@
                     android:padding="16dp"
                     android:gravity="center"
                     android:clickable="true"
-                    android:onClick="firstYear"
+                    android:onClick="thirdYear"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/contact"
+                        android:src="@drawable/numberthree"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -166,12 +166,12 @@
                     android:padding="16dp"
                     android:gravity="center"
                     android:clickable="true"
-                    android:onClick="firstYear"
+                    android:onClick="fourthYear"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/contact"
+                        android:src="@drawable/numberfour"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
                     <Button
