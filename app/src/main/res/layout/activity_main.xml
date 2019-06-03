@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--UI Inspiration from: https://www.youtube.com/watch?v=LOcD1evBcSA -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

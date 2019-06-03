@@ -2,4 +2,6 @@
     <string name="app_name">Main Project</string>
     <string name="title_activity_major">Major</string>
     <color name="babyblue">#B4EBF1</color>
+    <color name="white">#FFFFFF</color>
+
 </resources>
