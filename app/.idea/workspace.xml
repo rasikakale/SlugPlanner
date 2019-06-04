@@ -11,9 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="61b5497a-98ac-4fac-a86b-663b0ded0af4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mainproject/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mainproject/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mainproject/firstyear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mainproject/firstyear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mainproject/fourthYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mainproject/fourthYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mainproject/secondYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mainproject/secondYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mainproject/thirdYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mainproject/thirdYear.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,60 +32,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/EditProfile.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/firstyear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="318">
+              <caret line="168" selection-start-line="136" selection-start-column="8" selection-end-line="168" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profile.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/secondYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="207" column="28" selection-start-line="207" selection-start-column="28" selection-end-line="207" selection-end-column="28" />
+            <state relative-caret-position="228">
+              <caret line="161" column="24" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/Profile.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/thirdYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            <state relative-caret-position="273">
+              <caret line="161" selection-start-line="130" selection-start-column="8" selection-end-line="161" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="195" column="24" selection-end-line="218" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_gpa2.xml">
-          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1027">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="90">
+              <caret line="6" column="42" selection-end-line="143" selection-end-column="46" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/fourthYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="24" column="5" selection-start-line="20" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="78">
+              <caret line="157" column="53" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -109,21 +109,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_gp.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_gpa.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MyDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/MyDB.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_gpa2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/GradPlanner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/EditProfile.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_date_prac.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/DatePrac.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/Profile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_gp.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_firstyear.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/firstyear.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/secondYear.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/thirdYear.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/fourthYear.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA2.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_gpa2.xml" />
       </list>
     </option>
   </component>
@@ -138,8 +143,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -286,7 +291,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32956383" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32956383" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -295,13 +300,13 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4983845" visible="true" weight="0.3284553" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4983845" weight="0.3284553" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5016155" side_tool="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4983845" weight="0.3284553" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.4983845" visible="true" weight="0.3284553" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -312,7 +317,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA.java" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_gpa.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_edit_profile.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -334,14 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/DatePrac.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -356,59 +352,131 @@
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/GradPlanner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="1905">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5850">
+          <caret line="428" column="19" selection-start-line="428" selection-start-column="19" selection-end-line="428" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profile.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="168" column="28" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/EditProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="333">
+          <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_gpa2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1027">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="207" column="28" selection-start-line="207" selection-start-column="28" selection-end-line="207" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="24" column="5" selection-start-line="20" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="168">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="177" column="1" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_gp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/GradPlanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_firstyear.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-999">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        <state relative-caret-position="316">
+          <caret line="51" column="62" selection-start-line="50" selection-start-column="8" selection-end-line="51" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/firstyear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="168" selection-start-line="136" selection-start-column="8" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/secondYear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="161" column="24" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/thirdYear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="161" selection-start-line="130" selection-start-column="8" selection-end-line="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/fourthYear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="157" column="53" selection-start-line="157" selection-start-column="53" selection-end-line="157" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mainproject/GPA2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state relative-caret-position="121">
+          <caret line="195" column="24" selection-end-line="218" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_gpa2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-end-line="143" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
   <component name="masterDetails">

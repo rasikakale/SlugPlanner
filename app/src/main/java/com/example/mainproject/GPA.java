@@ -1,19 +1,14 @@
 package com.example.mainproject;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-
-public class GPA2 extends AppCompatActivity {
+public class GPA extends AppCompatActivity {
 
 
     EditText gpa1;
@@ -36,7 +31,6 @@ public class GPA2 extends AppCompatActivity {
 
     public static double overallGPA;
     public static double overallUnits;
-    private static DecimalFormat df = new DecimalFormat("0.00");
 
 
     @Override
@@ -180,49 +174,5 @@ public class GPA2 extends AppCompatActivity {
         totalGPA = ((gpaClassPoints1 + gpaClassPoints2 + gpaClassPoints3) / unitTotal);
 
         gpaTextView.setText("Quarter GPA: " + String.valueOf(totalGPA));
-
-
-        overallGPA = .00000000001;
-
-        overallGPA = Double.parseDouble(Profile.GPA.getText().toString());
-
-        overallUnits = Double.parseDouble(Profile.unitsText.getText().toString());
-
-
-        overallGPA = ((overallGPA * overallUnits) + (totalGPA * unitTotal)) / (overallUnits + unitTotal);
-        overallUnits = overallUnits + unitTotal;
-
-        df.setRoundingMode(RoundingMode.UP);
-        overallGPA = Double.parseDouble(df.format(overallGPA));
-
-
-        SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("GPA", Double.toString(GPA2.overallGPA));
-        editor.putString("UNITS", Double.toString(GPA2.overallUnits));
-        editor.commit();
-
-//
-//
-//        Profile.GPA.setText(String.valueOf(overallGPA));
-
-
-        //Toast.makeText(ctx, "GPA Points: " + (gpaQuarterPoints), Toast.LENGTH_LONG).show();
-
-        Log.d("GPAPoint", String.valueOf(overallGPA));
-
-        System.out.printf("Value with 3 digits after decimal point %.3f %n", totalGPA);
-        df.setRoundingMode(RoundingMode.UP);
-        totalGPA = Double.parseDouble(df.format(totalGPA));
-        Log.d("GPAPoints", String.valueOf(totalGPA));
-        // Log.d("Gpa", String.valueOf(gpaClassPoints));
-
-
-        Intent intent = new Intent(this, Profile.class);
-        startActivity(intent);
-
-
     }
-
-
 }

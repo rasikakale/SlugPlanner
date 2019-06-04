@@ -232,13 +232,12 @@
             android:onClick="edit"
             />
 
-            <Button
+        <Button
             android:id="@+id/GPAVAL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GPA Calculator"
             android:onClick="GPA"
-            />
+            android:text="Update GPA" />
     </LinearLayout>
 
     <!--<TextView-->

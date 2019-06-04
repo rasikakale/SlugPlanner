@@ -1,145 +1,486 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:orientation="vertical"
     tools:context=".GPA2">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="104dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginLeft="154dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginRight="155dp"
-        android:layout_marginBottom="21dp"
-        android:onClick="calculate"
-        android:text="Calculate"
-        app:layout_constraintBottom_toTopOf="@+id/gpaTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/singleClass1"
-        android:layout_width="313dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="Enter Letter Grade for Single Class"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/units1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/units1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginLeft="99dp"
-        android:layout_marginEnd="99dp"
-        android:layout_marginRight="99dp"
-        android:layout_marginBottom="40dp"
-        android:ems="10"
-        android:hint="Enter Units taken"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/singleClass2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textDashboard"
+                android:text="Update GPA"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="12dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<ImageView-->
+                <!--android:src="@drawable/number"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp"
+                    android:text="Grade for Class 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/singleClass1"
+                    android:layout_width="313dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:textSize="11sp"
+                    android:hint="Enter Letter Grade for Single Class"
+                    android:inputType="textPersonName" />
+                <EditText
+                    android:id="@+id/units1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="11sp"
+                    android:hint="Enter Units taken"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<ImageView-->
+                <!--android:src="@drawable/numbertwo"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp"
+                    android:text="Grade for Class 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/singleClass2"
+                    android:layout_width="313dp"
+                    android:layout_height="58dp"
+                    android:ems="10"
+                    android:textSize="11sp"
+                    android:hint="Enter Letter Grade for Single Class"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/units2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="11sp"
+                    android:hint="Enter Units taken"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<ImageView-->
+                <!--android:src="@drawable/numberthree"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp" />-->
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp"
+                    android:text="Grade for Class 3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/singleClass3"
+                    android:layout_width="313dp"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:textSize="11sp"
+                    android:hint="Enter Letter Grade for Single Class"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/units3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="11sp"
+                    android:hint="Enter Units taken"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/button"
+            android:background="@drawable/buttonstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculate"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Calculate" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="12dp">
+            <TextView
+                android:id="@+id/gpaTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:text="Quarter GPA:" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 
 
-    <EditText
-        android:id="@+id/singleClass2"
-        android:layout_width="313dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="Enter Letter Grade for Single Class"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/units2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_width="104dp"-->
+    <!--android:layout_height="59dp"-->
+    <!--android:layout_marginStart="154dp"-->
+    <!--android:layout_marginLeft="154dp"-->
+    <!--android:layout_marginEnd="155dp"-->
+    <!--android:layout_marginRight="155dp"-->
+    <!--android:layout_marginBottom="21dp"-->
+    <!--android:onClick="calculate"-->
+    <!--android:text="Calculate"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/gpaTextView"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
 
-    <EditText
-        android:id="@+id/units2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginLeft="99dp"
-        android:layout_marginEnd="99dp"
-        android:layout_marginRight="99dp"
-        android:layout_marginBottom="40dp"
-        android:ems="10"
-        android:hint="Enter Units taken"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/singleClass3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+    <!--<EditText-->
+    <!--android:id="@+id/singleClass1"-->
+    <!--android:layout_width="313dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_marginStart="60dp"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Enter Letter Grade for Single Class"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/units1"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
 
-    <EditText
-        android:id="@+id/singleClass3"
-        android:layout_width="313dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="Enter Letter Grade for Single Class"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/units3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+    <!--<EditText-->
+    <!--android:id="@+id/units1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="99dp"-->
+    <!--android:layout_marginLeft="99dp"-->
+    <!--android:layout_marginEnd="99dp"-->
+    <!--android:layout_marginRight="99dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Enter Units taken"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/singleClass2"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
 
-    <EditText
-        android:id="@+id/units3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginLeft="99dp"
-        android:layout_marginEnd="99dp"
-        android:layout_marginRight="99dp"
-        android:layout_marginBottom="30dp"
-        android:ems="10"
-        android:hint="Enter Units taken"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/gpaTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="177dp"
-        android:layout_marginLeft="177dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginRight="176dp"
-        android:layout_marginBottom="36dp"
-        android:text="Quarter GPA:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <!--<EditText-->
+    <!--android:id="@+id/singleClass2"-->
+    <!--android:layout_width="313dp"-->
+    <!--android:layout_height="58dp"-->
+    <!--android:layout_marginStart="60dp"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Enter Letter Grade for Single Class"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/units2"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
 
-</android.support.constraint.ConstraintLayout>
+    <!--<EditText-->
+    <!--android:id="@+id/units2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="99dp"-->
+    <!--android:layout_marginLeft="99dp"-->
+    <!--android:layout_marginEnd="99dp"-->
+    <!--android:layout_marginRight="99dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Enter Units taken"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/singleClass3"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/singleClass3"-->
+    <!--android:layout_width="313dp"-->
+    <!--android:layout_height="47dp"-->
+    <!--android:layout_marginStart="60dp"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Enter Letter Grade for Single Class"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/units3"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/units3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="99dp"-->
+    <!--android:layout_marginLeft="99dp"-->
+    <!--android:layout_marginEnd="99dp"-->
+    <!--android:layout_marginRight="99dp"-->
+    <!--android:layout_marginBottom="30dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Enter Units taken"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/button"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/gpaTextView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="177dp"-->
+    <!--android:layout_marginLeft="177dp"-->
+    <!--android:layout_marginEnd="176dp"-->
+    <!--android:layout_marginRight="176dp"-->
+    <!--android:layout_marginBottom="36dp"-->
+    <!--android:text="Quarter GPA:"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/gradient"-->
+    <!--tools:context=".GPA2">-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="104dp"-->
+        <!--android:layout_height="59dp"-->
+        <!--android:layout_marginStart="154dp"-->
+        <!--android:layout_marginLeft="154dp"-->
+        <!--android:layout_marginEnd="155dp"-->
+        <!--android:layout_marginRight="155dp"-->
+        <!--android:layout_marginBottom="21dp"-->
+        <!--android:onClick="calculate"-->
+        <!--android:text="Calculate"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/gpaTextView"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/singleClass1"-->
+        <!--android:layout_width="313dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_marginStart="60dp"-->
+        <!--android:layout_marginLeft="60dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_marginEnd="60dp"-->
+        <!--android:layout_marginRight="60dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Letter Grade for Single Class"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/units1"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/units1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="99dp"-->
+        <!--android:layout_marginLeft="99dp"-->
+        <!--android:layout_marginEnd="99dp"-->
+        <!--android:layout_marginRight="99dp"-->
+        <!--android:layout_marginBottom="40dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Units taken"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/singleClass2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/singleClass2"-->
+        <!--android:layout_width="313dp"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:layout_marginStart="60dp"-->
+        <!--android:layout_marginLeft="60dp"-->
+        <!--android:layout_marginEnd="60dp"-->
+        <!--android:layout_marginRight="60dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Letter Grade for Single Class"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/units2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/units2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="99dp"-->
+        <!--android:layout_marginLeft="99dp"-->
+        <!--android:layout_marginEnd="99dp"-->
+        <!--android:layout_marginRight="99dp"-->
+        <!--android:layout_marginBottom="40dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Units taken"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/singleClass3"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/singleClass3"-->
+        <!--android:layout_width="313dp"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginStart="60dp"-->
+        <!--android:layout_marginLeft="60dp"-->
+        <!--android:layout_marginEnd="60dp"-->
+        <!--android:layout_marginRight="60dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Letter Grade for Single Class"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/units3"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/units3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="99dp"-->
+        <!--android:layout_marginLeft="99dp"-->
+        <!--android:layout_marginEnd="99dp"-->
+        <!--android:layout_marginRight="99dp"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Units taken"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/button"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/gpaTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="177dp"-->
+        <!--android:layout_marginLeft="177dp"-->
+        <!--android:layout_marginEnd="176dp"-->
+        <!--android:layout_marginRight="176dp"-->
+        <!--android:layout_marginBottom="36dp"-->
+        <!--android:text="Quarter GPA:"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+</android.widget.LinearLayout>

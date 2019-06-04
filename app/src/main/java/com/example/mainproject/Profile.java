@@ -45,14 +45,27 @@ public class Profile extends AppCompatActivity {
 
 
 
+        
+        //PROFILE
+
+        String gpaText = prefs.getString("GPA", String.valueOf(0));
+        String unitText = prefs.getString("UNITS", String.valueOf(0));
 
 
         GPA = findViewById(R.id.GPA);
         unitsText = findViewById(R.id.unitsText);
 
-        GPA.setText(Double.toString(GPA2.overallGPA));
-        unitsText.setText(Double.toString(GPA2.unitTotal));
-        //Double.toString(double)
+
+        //GPA.setText(Double.toString(GPA2.overallGPA));
+
+        GPA.setText(gpaText);
+
+//        unitsText.setText(Double.toString(GPA2.overallUnits));
+        unitsText.setText(unitText);
+
+
+
+
 
 
 
