@@ -81,7 +81,7 @@
                         />
 
 
-                    <TextView
+                    <EditText
                         android:id="@+id/GPA"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
                         />
 
 
-                    <TextView
+                    <EditText
                         android:id="@+id/unitsText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
