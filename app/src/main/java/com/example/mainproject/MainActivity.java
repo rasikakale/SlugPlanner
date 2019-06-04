@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     static MyDB db;
     public static ArrayList<String> arrayList_courses = new ArrayList<String>();
+   // public static ArrayList<String> selected_courses = new ArrayList<String>();
     public static int i = 1;
 
     @Override

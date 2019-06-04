@@ -47,8 +47,8 @@ public class firstyear extends AppCompatActivity {
         spring3 = findViewById(R.id.spring3);
 
 
-        Log.d("course", "hello");
-        Log.d("course", String.valueOf(arrayList_courses));
+       // Log.d("course", "hello");
+        //Log.d("course", String.valueOf(arrayList_courses));
 
 //        fall set the search bars
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.fall1);
