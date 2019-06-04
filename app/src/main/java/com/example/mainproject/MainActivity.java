@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     static MyDB db;
     public static ArrayList<String> arrayList_courses = new ArrayList<String>();
+    public static int i = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle("Slug Planner");
         db = new MyDB(this, "NAME_DATABASE", null, 1);
-        new doIt().execute();
+        if(i == 1) {
+            new doIt().execute();
+            i++;
+        }
 
     }
 
@@ -70,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 Document doc = Jsoup.connect("https://courses.soe.ucsc.edu/courses/cse?year=2019").get();
                 bread = doc.text();
+                i++;
                 Elements titles = doc.getElementsByClass("course-name");
                 for(Element title : titles) {
                     course = title.text();

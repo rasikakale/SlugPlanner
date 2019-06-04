@@ -95,8 +95,8 @@
             android:id="@+id/back"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
-            android:text="Back to Menu"
-            android:onClick="backToPlanner"/>
+            android:onClick="backToPlanner"
+            android:text="Back" />
 
     </LinearLayout>
 </android.widget.LinearLayout>
