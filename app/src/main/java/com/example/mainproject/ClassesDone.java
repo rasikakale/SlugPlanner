@@ -65,6 +65,7 @@ public class ClassesDone extends AppCompatActivity {
         Toast.makeText(this, "You have selected: \n" + courses, Toast.LENGTH_LONG).show();
 
 
+
     }
 
 
@@ -74,6 +75,7 @@ public class ClassesDone extends AppCompatActivity {
 
         new_courses.addAll(selected_courses);
         arrayList_courses.removeAll(selected_courses);
+        selected_courses.clear();
 
         Intent intent = new Intent(this, ClassesLeft.class);
         startActivity(intent);
