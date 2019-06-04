@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstYear">
+    tools:context=".firstyear">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -90,6 +90,10 @@
             android:layout_height="wrap_content"
             android:hint="Enter a class" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <Button
             android:id="@+id/back"
             android:layout_width="141dp"
@@ -97,6 +101,18 @@
             android:text="Back to Menu"
             android:onClick="backToPlanner"/>
 
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="178dp"
+                android:text="Save"
+               />
+        </LinearLayout>
+
+
     </LinearLayout>
+
+
 
 </android.widget.LinearLayout>
