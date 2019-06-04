@@ -18,7 +18,6 @@ public class GradPlanner extends AppCompatActivity {
     Button year4;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

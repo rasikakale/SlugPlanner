@@ -86,9 +86,6 @@ public class thirdYear extends AppCompatActivity {
         autoCompleteTextViewSP3.setAdapter(adapterSP3);
 
 
-
-
-
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
 
@@ -107,8 +104,6 @@ public class thirdYear extends AppCompatActivity {
         String classSpring3 = prefs.getString("spring3Yr3", "");
 
 
-
-
         fall1.setText(classFall1);
         fall2.setText(classFall2);
         fall3.setText(classFall3);
@@ -121,7 +116,6 @@ public class thirdYear extends AppCompatActivity {
         spring1.setText(classSpring1);
         spring2.setText(classSpring2);
         spring3.setText(classSpring3);
-
 
     }
 
@@ -159,8 +153,6 @@ public class thirdYear extends AppCompatActivity {
         editor.putString("spring3Yr3", springClass3);
 
         editor.commit();
-
-
 
 
         Intent intent = new Intent(this, GradPlanner.class);

@@ -25,7 +25,6 @@ import java.util.ArrayList;
 
 
 public class ClassesDone extends AppCompatActivity {
-    //TextView courseText;
     ListView listView;
     public static ArrayList<String> arrayList_courses = new ArrayList<String>();
     public static ArrayList<String> selected_courses = new ArrayList<String>();
@@ -54,17 +53,12 @@ public class ClassesDone extends AppCompatActivity {
 
     }
 
-
-
     public void showSelectedClasses(View view) {
         String courses = "";
         for(String course: selected_courses) {
                 courses += "-" + course + "\n";
         }
-        Log.d("selected courses", courses);
         Toast.makeText(this, "You have selected: \n" + courses, Toast.LENGTH_LONG).show();
-
-
 
     }
 
@@ -79,7 +73,6 @@ public class ClassesDone extends AppCompatActivity {
 
         Intent intent = new Intent(this, ClassesLeft.class);
         startActivity(intent);
-
 
     }
 
@@ -98,11 +91,10 @@ public class ClassesDone extends AppCompatActivity {
                 for(Element title : titles) {
                     course = title.text();
                     stringBuilder.append(course).append("\n");
+
                     //contains all courses of CS BS
                     arrayList_courses.add(course);
-                    Log.d("log", course);
                 }
-                Log.d("print courses", String.valueOf(arrayList_courses));
             } catch (IOException e) {
                 Log.d("log", "in catch-charity");
                 e.printStackTrace();
@@ -114,7 +106,6 @@ public class ClassesDone extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            Log.d("log", "about to print the classes");
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(ClassesDone.this, R.layout.course_items, arrayList_courses);
             listView.setAdapter(adapter);
 

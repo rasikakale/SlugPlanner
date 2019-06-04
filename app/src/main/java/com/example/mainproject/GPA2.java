@@ -1,4 +1,6 @@
 package com.example.mainproject;
+/* REAL GPA CLASS */
+
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -43,10 +46,8 @@ public class GPA2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpa2);
-        //gpa1 = findViewById(R.id.GPAValue);
 
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
-
 
         unitVal1 = findViewById(R.id.units1);
         oneClass1 = findViewById(R.id.singleClass1);
@@ -58,24 +59,19 @@ public class GPA2 extends AppCompatActivity {
         oneClass3 = findViewById(R.id.singleClass3);
 
         gpaTextView = findViewById(R.id.gpaTextView);
-        //gpaProfile = findViewById();
-
 
     }
 
 
     public void calculate(View view) {
-        // int gpaVal1  = Integer.parseInt(gpa1.getText().toString());
         double unitValue1 = Double.parseDouble(unitVal1.getText().toString());
         String singleClass1 = oneClass1.getText().toString();
         double classVal1;
-
 
         double unitValue2 = Double.parseDouble(unitVal2.getText().toString());
         String singleClass2 = oneClass2.getText().toString();
         double classVal2;
 
-        //int gpaVal3  = Integer.parseInt(gpa3.getText().toString());
         double unitValue3 = Double.parseDouble(unitVal3.getText().toString());
         String singleClass3 = oneClass3.getText().toString();
         double classVal3;
@@ -166,11 +162,6 @@ public class GPA2 extends AppCompatActivity {
             classVal3 = 0;
         }
 
-
-        //  double gpaQuarterPoints1 = gpaVal1 * unitVal1;
-        // double gpaQuarterPoints2 = gpaVal2 * unitVal2;
-        // double gpaQuarterPoints3 = gpaVal3 * unitVal3;
-
         unitTotal = unitValue1 + unitValue2 + unitValue3;
 
         double gpaClassPoints1 = classVal1 * unitValue1;
@@ -202,21 +193,9 @@ public class GPA2 extends AppCompatActivity {
         editor.putString("UNITS", Double.toString(GPA2.overallUnits));
         editor.commit();
 
-//
-//
-//        Profile.GPA.setText(String.valueOf(overallGPA));
 
-
-        //Toast.makeText(ctx, "GPA Points: " + (gpaQuarterPoints), Toast.LENGTH_LONG).show();
-
-        Log.d("GPAPoint", String.valueOf(overallGPA));
-
-        System.out.printf("Value with 3 digits after decimal point %.3f %n", totalGPA);
         df.setRoundingMode(RoundingMode.UP);
         totalGPA = Double.parseDouble(df.format(totalGPA));
-        Log.d("GPAPoints", String.valueOf(totalGPA));
-        // Log.d("Gpa", String.valueOf(gpaClassPoints));
-
 
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);

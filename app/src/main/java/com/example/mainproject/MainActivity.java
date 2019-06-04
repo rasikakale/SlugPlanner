@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
     static MyDB db;
     public static ArrayList<String> arrayList_courses = new ArrayList<String>();
-   // public static ArrayList<String> selected_courses = new ArrayList<String>();
     public static int i = 1;
 
     @Override
@@ -82,11 +81,11 @@ public class MainActivity extends AppCompatActivity {
                     stringBuilder.append(course).append("\n");
                     //contains all courses of CS BS
                     arrayList_courses.add(course);
-                    Log.d("log", course);
+                  //  Log.d("log", course);
                 }
-                Log.d("print courses", String.valueOf(arrayList_courses));
+               // Log.d("print courses", String.valueOf(arrayList_courses));
             } catch (IOException e) {
-                Log.d("log", "in catch-charity");
+               // Log.d("log", "in catch-charity");
                 e.printStackTrace();
             }
             return null;
@@ -94,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            Log.d("log", "about to print the classes");
+           // Log.d("log", "about to print the classes");
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, R.layout.course_items, arrayList_courses);
         }
     }

@@ -18,7 +18,6 @@ public class ClassesLeft extends AppCompatActivity {
     public static ArrayList<String> sel_courses = new ArrayList<String>();
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +26,12 @@ public class ClassesLeft extends AppCompatActivity {
 
         classDoneListView = (ListView) findViewById(R.id.ClassesDoneView);
         mAdapter = new ArrayAdapter<String>(ClassesLeft.this, R.layout.sample_view, sel_courses);
-        Log.d("classes_left_courses", String.valueOf(sel_courses));
         classDoneListView.setAdapter(mAdapter);
 
     }
 
     public void back(View view) {
+
         Intent intent =  new Intent(this, ClassProgress.class);
         startActivity(intent);
 

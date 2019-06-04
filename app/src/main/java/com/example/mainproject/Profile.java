@@ -47,35 +47,20 @@ public class Profile extends AppCompatActivity {
 
         
         //PROFILE
-
         String gpaText = prefs.getString("GPA", String.valueOf(0));
         String unitText = prefs.getString("UNITS", String.valueOf(0));
 
 
         GPA = findViewById(R.id.GPA);
         unitsText = findViewById(R.id.unitsText);
-
-
-        //GPA.setText(Double.toString(GPA2.overallGPA));
-
         GPA.setText(gpaText);
-
-//        unitsText.setText(Double.toString(GPA2.overallUnits));
         unitsText.setText(unitText);
-
-
-
-
-
-
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
         Date date = new Date();
         System.out.println(dateFormat.format(date)); //2016/11/16 12:08:43
         Date otherDate = new Date(2019, 2,7);
 
-        //int day = Days.daysBetween(date, otherDate).getDays();
-        //Log.d("log", "the current date is:" + (day));
     }
 
 
