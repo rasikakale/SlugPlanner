@@ -48,8 +48,8 @@ public class Profile extends AppCompatActivity {
         
         //PROFILE
 
-        String gpaText = prefs.getString("GPA", "Default");
-        String unitText = prefs.getString("UNITS", "Default");
+        String gpaText = prefs.getString("GPA", String.valueOf(0));
+        String unitText = prefs.getString("UNITS", String.valueOf(0));
 
 
         GPA = findViewById(R.id.GPA);

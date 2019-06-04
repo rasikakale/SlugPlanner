@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+
 public class GPA2 extends AppCompatActivity {
 
 
@@ -33,6 +36,7 @@ public class GPA2 extends AppCompatActivity {
 
     public static double overallGPA;
     public static double overallUnits;
+    private static DecimalFormat df = new DecimalFormat("0.00");
 
 
     @Override
@@ -188,6 +192,9 @@ public class GPA2 extends AppCompatActivity {
         overallGPA = ((overallGPA * overallUnits) + (totalGPA * unitTotal)) / (overallUnits + unitTotal);
         overallUnits = overallUnits + unitTotal;
 
+        df.setRoundingMode(RoundingMode.UP);
+        overallGPA = Double.parseDouble(df.format(overallGPA));
+
 
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
@@ -205,6 +212,8 @@ public class GPA2 extends AppCompatActivity {
         Log.d("GPAPoint", String.valueOf(overallGPA));
 
         System.out.printf("Value with 3 digits after decimal point %.3f %n", totalGPA);
+        df.setRoundingMode(RoundingMode.UP);
+        totalGPA = Double.parseDouble(df.format(totalGPA));
         Log.d("GPAPoints", String.valueOf(totalGPA));
         // Log.d("Gpa", String.valueOf(gpaClassPoints));
 
