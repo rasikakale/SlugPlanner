@@ -53,7 +53,7 @@
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_today_black_24dp"/>
+                android:src="@drawable/ic_school_black_24dp"/>
             <TextView
             android:id="@+id/majorText"
             android:layout_width="wrap_content"

@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
+                android:textSize="20sp"
                 android:text="Charity Funtila"
                 android:textColor="#fff" />
         </LinearLayout>
@@ -133,19 +134,7 @@
         <LinearLayout
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/ic_today_black_24dp"/>
-            <TextView
-                android:id="@+id/GradDaysText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:textSize="20sp"
-                android:text="Days Until Graduation: 100"/>
-        </LinearLayout>
+            android:layout_height="wrap_content"/>
         <LinearLayout
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
