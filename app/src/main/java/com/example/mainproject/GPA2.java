@@ -225,4 +225,10 @@ public class GPA2 extends AppCompatActivity {
     }
 
 
+    // back button to main menu
+    public void menu(View view) {
+        Intent intent =  new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+    }
 }

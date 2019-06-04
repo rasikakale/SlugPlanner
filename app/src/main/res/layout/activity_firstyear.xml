@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
         <Button
-            android:id="@+id/back"
+            android:id="@+id/backbutton"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
             android:onClick="backToPlanner"

@@ -178,7 +178,20 @@
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:text="Calculate" />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
 
+           <Button
+               android:id="@+id/backbutton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="30dp"
+               android:text="Main Menu"
+               android:onClick="menu" />
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -196,7 +209,12 @@
                 android:textStyle="bold"
                 android:text="Quarter GPA:" />
 
+
+
         </android.support.v7.widget.CardView>
+
+
+       </LinearLayout>
 
     </LinearLayout>
 
@@ -483,4 +501,5 @@
         <!--app:layout_constraintStart_toStartOf="parent" />-->
 
 <!--</android.support.constraint.ConstraintLayout>-->
+
 </android.widget.LinearLayout>

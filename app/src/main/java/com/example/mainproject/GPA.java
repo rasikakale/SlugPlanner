@@ -1,6 +1,7 @@
 package com.example.mainproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -174,5 +175,10 @@ public class GPA extends AppCompatActivity {
         totalGPA = ((gpaClassPoints1 + gpaClassPoints2 + gpaClassPoints3) / unitTotal);
 
         gpaTextView.setText("Quarter GPA: " + String.valueOf(totalGPA));
+    }
+    // back button to main menu
+    public void menu(View view) {
+        Intent intent =  new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
