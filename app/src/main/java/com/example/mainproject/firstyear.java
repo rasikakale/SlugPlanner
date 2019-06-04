@@ -28,11 +28,6 @@ public class firstyear extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstyear);
 
-
-
-
-
-
         setTitle("First year");
         fall1 = findViewById(R.id.fall1);
         fall2 = findViewById(R.id.fall2);
@@ -46,9 +41,6 @@ public class firstyear extends AppCompatActivity {
         spring2 = findViewById(R.id.spring2);
         spring3 = findViewById(R.id.spring3);
 
-
-       // Log.d("course", "hello");
-        //Log.d("course", String.valueOf(arrayList_courses));
 
 //        fall set the search bars
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.fall1);

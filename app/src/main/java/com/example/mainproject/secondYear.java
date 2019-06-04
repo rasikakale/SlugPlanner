@@ -42,9 +42,6 @@ public class secondYear extends AppCompatActivity {
         spring3 = findViewById(R.id.spring3);
 
 
-        Log.d("course", "hello");
-        Log.d("course", String.valueOf(arrayList_courses));
-
 //        fall set the search bars
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.fall1);
         AutoCompleteTextView autoCompleteTextView2 = findViewById(R.id.fall2);
@@ -73,6 +70,7 @@ public class secondYear extends AppCompatActivity {
         autoCompleteTextViewWT2.setAdapter(adapterWT2);
         ArrayAdapter<String> adapterWT3 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList_courses);
         autoCompleteTextViewWT3.setAdapter(adapterWT3);
+
 //        spring set the search bars
         AutoCompleteTextView autoCompleteTextViewSP1 = findViewById(R.id.spring1);
         AutoCompleteTextView autoCompleteTextViewSP2 = findViewById(R.id.spring2);
@@ -84,10 +82,6 @@ public class secondYear extends AppCompatActivity {
         autoCompleteTextViewSP2.setAdapter(adapterSP2);
         ArrayAdapter<String> adapterSP3 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayList_courses);
         autoCompleteTextViewSP3.setAdapter(adapterSP3);
-
-
-
-
 
 
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
@@ -106,8 +100,6 @@ public class secondYear extends AppCompatActivity {
         String classSpring1 = prefs.getString("spring1Yr2", "");
         String classSpring2 = prefs.getString("spring2Yr2", "");
         String classSpring3 = prefs.getString("spring3Yr2", "");
-
-
 
 
         fall1.setText(classFall1);
@@ -162,15 +154,9 @@ public class secondYear extends AppCompatActivity {
         editor.commit();
 
 
-
-
-
-
-
-
         Intent intent = new Intent(this, GradPlanner.class);
         startActivity(intent);
-    }
+     }
 
-    }
+}
 

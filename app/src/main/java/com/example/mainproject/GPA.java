@@ -37,7 +37,6 @@ public class GPA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpa2);
-        //gpa1 = findViewById(R.id.GPAValue);
 
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
@@ -52,14 +51,12 @@ public class GPA extends AppCompatActivity {
         oneClass3 = findViewById(R.id.singleClass3);
 
         gpaTextView = findViewById(R.id.gpaTextView);
-        //gpaProfile = findViewById();
 
 
     }
 
 
     public void calculate(View view) {
-        // int gpaVal1  = Integer.parseInt(gpa1.getText().toString());
         double unitValue1 = Double.parseDouble(unitVal1.getText().toString());
         String singleClass1 = oneClass1.getText().toString();
         double classVal1;
@@ -69,7 +66,6 @@ public class GPA extends AppCompatActivity {
         String singleClass2 = oneClass2.getText().toString();
         double classVal2;
 
-        //int gpaVal3  = Integer.parseInt(gpa3.getText().toString());
         double unitValue3 = Double.parseDouble(unitVal3.getText().toString());
         String singleClass3 = oneClass3.getText().toString();
         double classVal3;
@@ -159,11 +155,6 @@ public class GPA extends AppCompatActivity {
         } else {
             classVal3 = 0;
         }
-
-
-        //  double gpaQuarterPoints1 = gpaVal1 * unitVal1;
-        // double gpaQuarterPoints2 = gpaVal2 * unitVal2;
-        // double gpaQuarterPoints3 = gpaVal3 * unitVal3;
 
         unitTotal = unitValue1 + unitValue2 + unitValue3;
 

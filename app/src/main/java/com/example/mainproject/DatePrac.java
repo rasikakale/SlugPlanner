@@ -22,8 +22,4 @@ public class DatePrac extends AppCompatActivity {
     }
 
 
-    //String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
-
-
-
 }

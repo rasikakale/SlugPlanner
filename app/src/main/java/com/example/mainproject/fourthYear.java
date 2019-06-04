@@ -42,9 +42,6 @@ public class fourthYear extends AppCompatActivity {
         spring3 = findViewById(R.id.spring3);
 
 
-        Log.d("course", "hello");
-        Log.d("course", String.valueOf(arrayList_courses));
-
 //        fall set the search bars
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.fall1);
         AutoCompleteTextView autoCompleteTextView2 = findViewById(R.id.fall2);
@@ -86,8 +83,6 @@ public class fourthYear extends AppCompatActivity {
         autoCompleteTextViewSP3.setAdapter(adapterSP3);
 
 
-
-
         SharedPreferences prefs = getSharedPreferences("mydata", MODE_PRIVATE);
 
 
@@ -106,8 +101,6 @@ public class fourthYear extends AppCompatActivity {
         String classSpring3 = prefs.getString("spring3Yr4", "");
 
 
-
-
         fall1.setText(classFall1);
         fall2.setText(classFall2);
         fall3.setText(classFall3);
@@ -120,8 +113,6 @@ public class fourthYear extends AppCompatActivity {
         spring1.setText(classSpring1);
         spring2.setText(classSpring2);
         spring3.setText(classSpring3);
-
-
 
 
 
@@ -160,8 +151,6 @@ public class fourthYear extends AppCompatActivity {
         editor.putString("spring3Yr4", springClass3);
 
         editor.commit();
-
-
 
 
         Intent intent = new Intent(this, GradPlanner.class);
